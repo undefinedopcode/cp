@@ -110,6 +110,10 @@ func (s *Shape) CenterOfGravity() Vector {
 	return s.massInfo.cog
 }
 
+func (s *Shape) SetCenterOfGravity(cog Vector) {
+        s.massInfo.cog = cog
+}
+
 func (s *Shape) HashId() HashValue {
 	return s.hashid
 }
